@@ -57,6 +57,7 @@ header {
     align-items: center;
     height: 501px;
     margin-bottom: 20px;
+    text-align: center;
 }
 .header-container{
     text-align: center;
@@ -98,11 +99,7 @@ header {
     height: 100%;
     margin-left: 29px;
 }
-#Os{
-    text-align: center;
-    margin-bottom: 20px;
-    margin-left: 84px;
-}
+
 .sponsor{
     display: flex;
     justify-content: space-around;
@@ -190,7 +187,7 @@ header {
     border: none;
     border-radius: 8px;
     position: relative;
-    bottom: 115px;
+    bottom: 75px;
 }
 .text-1{
     font-size: 45px;
@@ -199,6 +196,61 @@ header {
 .text-2{
     color: antiquewhite;
 }
+/* facts list start  */
+.facts{
+    margin-top: 50px;
+}
+.facts-list{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.list{
+    padding: 35px 45px;
+    border: 1px solid #FF900E;
+}
+.list img{
+    margin-bottom: 15px;
+    height: 40px;
+    width: 40px;
+}
+.facts > h1{
+    font-size: 40px;
+    margin-bottom: 15px;   
+}
+.facts > p{
+    margin-bottom: 100px;
+}
+.list p{
+    font-size: 12px;
+}
+
+/* facts end  */
+
+/* footer start  */
+footer{
+    background-color: #151414;
+    color: white;
+    margin: 130px 0 130px 0;
+}
+.footer-container{
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-left{
+    width: 32%;
+}
+.footer-left h1{
+    margin-bottom: 16px;
+}
+.footer-right h1{
+    margin-bottom: 30px;
+    color: rgb(230, 8, 8);
+}
+
 /* small device  */
 @media screen and (max-width: 576px) {
     main{
@@ -326,6 +378,13 @@ header {
         border: none;
         border-radius: 8px;
         position: relative;
-        bottom: 98px;
+        bottom: 55px;
+    }
+    .facts-list{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .footer-container{
+        flex-direction: column;
     }
 }
